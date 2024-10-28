@@ -14,12 +14,22 @@ In Android, both `Serializable` and `Parcelable` are mechanisms used to pass dat
 - **Use Case**: `Parcelable` is preferred for passing data in Android when performance is important, especially for IPC or passing data between activities or services.
 
 ### Key Differences:
-| Feature              | Serializable                          | Parcelable                           |
-|----------------------|---------------------------------------|--------------------------------------|
-| **Type**             | Standard Java interface               | Android-specific interface           |
-| **Performance**      | Slower, uses reflection               | Faster, optimized for Android        |
-| **Garbage Creation** | Creates more garbage (more objects)   | Creates less garbage (efficient)     |
-| **Use Case**         | Suitable for general Java usage       | Preferred for Android, especially IPC|
+
+#### Type:
+- **Serializable**: Standard Java interface
+- **Parcelable**: Android-specific interface
+
+#### Performance
+- **Serializable**: Slower, uses reflection
+- **Parcelable**: Faster, optimized for Android
+
+#### Garbage Creation
+- **Serializable**: Creates more garbage (more objects)
+- **Parcelable**: Creates less garbage (efficient)
+
+#### Use Case
+- **Serializable**: Suitable for general Java usage
+- **Parcelable**: Preferred for Android, especially IPC
 
 ### Conclusion:
 - **Use `Serializable`** for simpler cases or when dealing with non-performance-critical operations or when working with non-Android-specific code.

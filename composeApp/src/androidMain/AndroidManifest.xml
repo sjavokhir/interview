@@ -5,7 +5,7 @@
 
     <application
         android:icon="@mipmap/ic_launcher"
-        android:label="interview"
+        android:label="Interview"
         android:theme="@android:style/Theme.Material.NoActionBar">
         <activity
             android:name=".AppActivity"

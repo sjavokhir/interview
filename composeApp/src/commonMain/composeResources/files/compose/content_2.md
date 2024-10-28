@@ -13,11 +13,18 @@ In Jetpack Compose, both `remember` and `rememberSaveable` are used to retain st
 - **Limitation**: By default, it can only save types that are natively supported by Android’s `Bundle`, but you can provide custom `Saver` implementations to support other types.
 
 #### Key Differences:
-| Feature                         | `remember`                           | `rememberSaveable`                     |
-|----------------------------------|--------------------------------------|----------------------------------------|
-| **Retained across recompositions** | Yes                                  | Yes                                    |
-| **Retained across configuration changes** | No                                   | Yes                                    |
-| **Supported types**              | Any type                             | Types supported by `Bundle`, or custom |
+
+##### Retained across recompositions
+- **`remember`**: Yes
+- **`rememberSaveable`**: Yes
+
+##### Retained across configuration changes
+- **`remember`**: No
+- **`rememberSaveable`**: Yes
+
+##### Supported types
+- **`remember`**: Any type
+- **`rememberSaveable`**: Types supported by `Bundle`, or custom
 
 #### In summary
 

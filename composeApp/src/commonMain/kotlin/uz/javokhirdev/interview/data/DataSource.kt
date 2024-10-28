@@ -19,19 +19,11 @@ object DataSource {
     @OptIn(ExperimentalResourceApi::class)
     suspend fun getContents(category: CategoryMode): Flow<List<ContentModel>> {
         return flow {
-            val contentPath = when (category) {
-                CategoryMode.Kotlin -> "files/contents_kotlin.json"
-                CategoryMode.Android -> "files/contents_android.json"
-                CategoryMode.Compose -> "files/contents_compose.json"
-            }
+            val contentPath = "${category.folder}/${category.filename}"
             val contentsJson = Res.readBytes(contentPath).decodeToString()
 
             val contents = json.decodeFromString<List<ContentModel>>(contentsJson).map {
-                val markdownPath = when (category) {
-                    CategoryMode.Kotlin -> "files/kotlin/content_${it.id}.md"
-                    CategoryMode.Android -> "files/android/content_${it.id}.md"
-                    CategoryMode.Compose -> "files/compose/content_${it.id}.md"
-                }
+                val markdownPath = "${category.folder}/content_${it.id}.md"
                 val markdown = Res.readBytes(markdownPath).decodeToString()
 
                 it.copy(markdown = markdown)

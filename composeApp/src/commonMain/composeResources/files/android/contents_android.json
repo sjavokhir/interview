@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "What is an Intent in Android?"
+  },
+  {
+    "id": 2,
+    "title": "Serialization vs. Percelable"
+  },
+  {
+    "id": 3,
+    "title": "Parcel and Parcelable"
+  },
+  {
+    "id": 4,
+    "title": "How to Implement Custom Views in Android Using XML"
+  },
+  {
+    "id": 5,
+    "title": "Describe the Activity lifecycle"
+  }
+,
+  {
+    "id": 6,
+    "title": "Describe the Fragment lifecycle"
+  }
+,
+  {
+    "id": 7,
+    "title": "Describe the View lifecycle"
+  }
+]

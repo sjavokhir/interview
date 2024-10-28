@@ -4,15 +4,24 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.safeDrawingPadding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.ArrowBackIosNew
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -38,7 +47,10 @@ data class ContentsScreen(
 
     override val key: ScreenKey = uniqueScreenKey
 
-    @OptIn(ExperimentalVoyagerApi::class)
+    @OptIn(
+        ExperimentalVoyagerApi::class,
+        ExperimentalMaterial3Api::class
+    )
     @Composable
     override fun Content() {
         val navigator = LocalNavigator.currentOrThrow
@@ -50,17 +62,34 @@ data class ContentsScreen(
             screenModel.onEvent(ContentEvent.FetchContents(category))
         }
 
-        LazyColumn(
-            modifier = Modifier
-                .fillMaxSize()
-                .safeDrawingPadding(),
-            verticalArrangement = Arrangement.spacedBy(16.dp),
-            contentPadding = PaddingValues(20.dp)
-        ) {
-            items(state.contents) {
-                ContentItem(it) {
-                    navigator.push(ContentDetailScreen(it))
+        Column {
+            TopAppBar(
+                title = {},
+                navigationIcon = {
+                    IconButton(onClick = navigator::pop) {
+                        Icon(
+                            imageVector = Icons.Rounded.ArrowBackIosNew,
+                            contentDescription = null,
+                        )
+                    }
                 }
+            )
+
+            HorizontalDivider(
+                color = MaterialTheme.colorScheme.outlineVariant.copy(alpha = .5f)
+            )
+
+            LazyColumn(
+                modifier = Modifier.fillMaxSize(),
+                verticalArrangement = Arrangement.spacedBy(16.dp),
+                contentPadding = PaddingValues(20.dp)
+            ) {
+                items(state.contents) {
+                    ContentItem(it) {
+                        navigator.push(ContentDetailScreen(it))
+                    }
+                }
+                item { Spacer(Modifier.navigationBarsPadding()) }
             }
         }
     }

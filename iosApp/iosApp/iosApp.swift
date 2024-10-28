@@ -3,6 +3,7 @@ import ComposeApp
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
     var window: UIWindow?
 
     func application(
