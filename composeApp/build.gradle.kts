@@ -62,9 +62,9 @@ android {
     defaultConfig {
         applicationId = "uz.javokhirdev.interview"
         minSdk = 21
-        targetSdk = 34
+        targetSdk = 35
         versionName = "1.0"
-        versionCode = 1
+        versionCode = 2
     }
 
     compileOptions {
