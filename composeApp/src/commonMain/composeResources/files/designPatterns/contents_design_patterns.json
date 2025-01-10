@@ -2,5 +2,21 @@
   {
     "id": 1,
     "title": "What is Dependency Injection (DI)?"
+  },
+  {
+    "id": 2,
+    "title": "What's the Repository Pattern, and How Can It Be Utilized in Android?"
+  },
+  {
+    "id": 3,
+    "title": "What's the Observer Pattern, and How Can It Be Used on Android?"
+  },
+  {
+    "id": 4,
+    "title": "What is the Builder Pattern? How Can It be Used on Android?"
+  },
+  {
+    "id": 5,
+    "title": "What's LRU Cache?"
   }
 ]

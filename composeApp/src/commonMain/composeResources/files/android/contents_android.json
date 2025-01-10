@@ -18,15 +18,69 @@
   {
     "id": 5,
     "title": "Describe the Activity lifecycle"
-  }
-,
+  },
   {
     "id": 6,
     "title": "Describe the Fragment lifecycle"
-  }
-,
+  },
   {
     "id": 7,
     "title": "Describe the View lifecycle"
+  },
+  {
+    "id": 8,
+    "title": "What's ANR on Android? How to prevent it"
+  },
+  {
+    "id": 9,
+    "title": "How Android handles memory management, and how can you avoid memory leaks?"
+  },
+  {
+    "id": 10,
+    "title": "What's SparseArray?"
+  },
+  {
+    "id": 11,
+    "title": "What's Application class?"
+  },
+  {
+    "id": 12,
+    "title": "What is Context?"
+  },
+  {
+    "id": 13,
+    "title": "What is the Android file system?"
+  },
+  {
+    "id": 14,
+    "title": "What is R8 optimization?"
+  },
+  {
+    "id": 15,
+    "title": "How do you handle offline-first features?"
+  },
+  {
+    "id": 16,
+    "title": "What's the purpose of a Bundle?"
+  },
+  {
+    "id": 17,
+    "title": "What are Android Runtime (ART), Dalvik, and Dex Compiler?"
+  },
+  {
+    "id": 18,
+    "title": "What are build variants and flavors?"
+  },
+  {
+    "id": 19,
+    "title": "What is ActivityManager?"
+  },
+  {
+    "id": 20,
+    "title": "What are SurfaceView and TextureView?"
+  },
+  {
+    "id": 21,
+    "title": "How does RecyclerView work internally?"
   }
 ]

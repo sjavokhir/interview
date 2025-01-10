@@ -15,6 +15,11 @@ enum class CategoryMode(
         folder = "files/android",
         filename = "contents_android.json"
     ),
+    KMP(
+        title = "Kotlin Multiplatform",
+        folder = "files/kmp",
+        filename = "contents_kmp.json"
+    ),
     Compose(
         title = "Compose",
         folder = "files/compose",

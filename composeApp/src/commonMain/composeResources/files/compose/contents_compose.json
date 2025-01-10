@@ -38,5 +38,41 @@
   {
     "id": 10,
     "title": "Stable vs. Immutable in Jetpack Compose"
+  },
+  {
+    "id": 11,
+    "title": "What are side effects in Jetpack Compose, and how can you use side-effect APIs?"
+  },
+  {
+    "id": 12,
+    "title": "What is SaveableStateHolder in Jetpack Compose?"
+  },
+  {
+    "id": 13,
+    "title": "What's recomposition?"
+  },
+  {
+    "id": 14,
+    "title": "What's the derivedStateOf?"
+  },
+  {
+    "id": 15,
+    "title": "What are mutableStateListOf and mutableStateMapOf?"
+  },
+  {
+    "id": 16,
+    "title": "Stateful vs. Stateless Composables in Jetpack Compose"
+  },
+  {
+    "id": 17,
+    "title": "What is `CompositionLocal`?"
+  },
+  {
+    "id": 18,
+    "title": "What's are the Compose phases?"
+  },
+  {
+    "id": 19,
+    "title": "Why is Jetpack Compose a declarative UI framework?"
   }
 ]

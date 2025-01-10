@@ -14,5 +14,65 @@
   {
     "id": 4,
     "title": "Corotuines vs. Thread"
+  },
+  {
+    "id": 5,
+    "title": "What is DSL in Kotlin and how can it be utilized?"
+  },
+  {
+    "id": 6,
+    "title": "What's the difference between Dispatchers.Main, Dispatchers.IO and Dispatchers.Default?"
+  },
+  {
+    "id": 7,
+    "title": "What's the Extension, and what are its pros and cons?"
+  },
+  {
+    "id": 8,
+    "title": "What's the difference between cold flow and hot flow?"
+  },
+  {
+    "id": 9,
+    "title": "What's the difference between StateFlow and SharedFlow?"
+  },
+  {
+    "id": 10,
+    "title": "What's inline keyword?"
+  },
+  {
+    "id": 11,
+    "title": "What's the factory pattern?"
+  },
+  {
+    "id": 12,
+    "title": "What's race condition?"
+  },
+  {
+    "id": 13,
+    "title": "What is the higher-order function?"
+  },
+  {
+    "id": 14,
+    "title": "What is a lambda expression?"
+  },
+  {
+    "id": 15,
+    "title": "What are structural equality and referential equality, and how do they differ?"
+  },
+  {
+    "id": 16,
+    "title": "What are the scope functions?"
+  },
+  {
+    "id": 17,
+    "title": "What is functional (SAM) interfaces?"
+  },
+  {
+    "id": 18,
+    "title": "What are the differences between launch and async?"
+  },
+  {
+    "id": 19,
+    "title": "What are the benefits and limitations of an inline keyword?"
   }
 ]
