@@ -74,5 +74,9 @@
   {
     "id": 19,
     "title": "What are the benefits and limitations of an inline keyword?"
+  },
+  {
+    "id": 20,
+    "title": "What happens if you run null + null operation?"
   }
 ]

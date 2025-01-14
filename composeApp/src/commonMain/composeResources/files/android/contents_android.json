@@ -82,5 +82,9 @@
   {
     "id": 21,
     "title": "How does RecyclerView work internally?"
+  },
+  {
+    "id": 22,
+    "title": "How do you store and persist data locally?"
   }
 ]
