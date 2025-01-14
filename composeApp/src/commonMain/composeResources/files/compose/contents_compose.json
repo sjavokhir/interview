@@ -78,5 +78,13 @@
   {
     "id": 20,
     "title": "What is composition and how to create it?"
+  },
+  {
+    "id": 21,
+    "title": "SaveableStateHolder and rememberSaveableStateHolder in Jetpack Compose"
+  },
+  {
+    "id": 22,
+    "title": "`Modifier.drawWithContent` in Jetpack Compose"
   }
 ]

@@ -78,5 +78,13 @@
   {
     "id": 20,
     "title": "What happens if you run null + null operation?"
+  },
+  {
+    "id": 21,
+    "title": "The `coroutineScope` extension"
+  },
+  {
+    "id": 22,
+    "title": "The `runBlocking` internals"
   }
 ]
