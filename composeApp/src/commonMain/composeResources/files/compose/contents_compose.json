@@ -86,5 +86,9 @@
   {
     "id": 22,
     "title": "`Modifier.drawWithContent` in Jetpack Compose"
+  },
+  {
+    "id": 23,
+    "title": "Why should you always test Compose performance in release mode?"
   }
 ]
